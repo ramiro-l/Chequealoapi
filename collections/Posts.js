@@ -1,5 +1,5 @@
 const Posts = {
-  slug: 'posts',
+  slug: 'entrevistas',
   admin: {
     defaultColumns: ['tiulo', 'autor','empresa', 'category', 'tags', 'status'],
     useAsTitle: 'title',
