@@ -44,15 +44,15 @@ const Posts = {
       type: 'select',
       options: [
         {
-          value: 'draft',
-          label: 'Draft',
+          value: 'borrador',
+          label: 'Borrador',
         },
         {
-          value: 'published',
-          label: 'Published',
+          value: 'publicada',
+          label: 'Publicada',
         },
       ],
-      defaultValue: 'draft',
+      defaultValue: 'borrador',
       admin: {
         position: 'sidebar',
       }
