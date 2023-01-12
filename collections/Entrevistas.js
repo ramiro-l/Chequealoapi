@@ -1,7 +1,7 @@
-const Posts = {
+const Entrevistas = {
   slug: 'entrevistas',
   admin: {
-    defaultColumns: ['titulo', 'autor','empresa', 'categoria', 'tags', 'status'],
+    defaultColumns: ['titulo', 'autor','empresa', 'categoria', 'estadoEmpresa', 'estado', 'pais'],
     useAsTitle: 'titulo',
   },
   access: {
@@ -17,23 +17,42 @@ const Posts = {
       type: 'text',
     },
     {
+      name: 'fotoPerfil',
+      type: 'upload',
+      relationTo: 'media'
+    },
+    {
       name: 'empresa',
       type: 'text',
     },
     {
-      name: 'publishedDate',
+      name: 'fechaPublicacion',
       type: 'date',
     },
     {
       name: 'categoria',
       type: 'relationship',
-      relationTo: 'categories'
+      relationTo: 'categorias'
     },
     {
-      name: 'tags',
+      name: 'pais',
       type: 'relationship',
-      relationTo: 'tags',
-      hasMany: true,
+      relationTo: 'paises'
+    },
+    {
+      name: 'estadoEmpresa',
+      type: 'select',
+      options: [
+        {
+          value: 'fallida',
+          label: 'Fallida',
+        },
+        {
+          value: 'exitosa',
+          label: 'Exitosa',
+        },
+      ],
+      defaultValue: 'exitosa',
     },
     {
       name: 'resumen',
@@ -44,7 +63,12 @@ const Posts = {
       type: 'richText'
     },
     {
-      name: 'status',
+      name: 'foto',
+      type: 'upload',
+      relationTo: 'media'
+    },
+    {
+      name: 'estado',
       type: 'select',
       options: [
         {
@@ -64,4 +88,4 @@ const Posts = {
   ],
 }
 
-export default Posts;
+export default Entrevistas;

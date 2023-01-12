@@ -1,5 +1,5 @@
-const Users = {
-  slug: 'users',
+const Usuarios = {
+  slug: 'usuarios',
   auth: true,
   admin: {
     useAsTitle: 'email',
@@ -16,4 +16,4 @@ const Users = {
   ],
 };
 
-export default Users;
+export default Usuarios;

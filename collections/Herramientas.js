@@ -21,9 +21,9 @@ const Herramientas = {
       type: 'text',
     },
     {
-      name: 'category',
+      name: 'categoria',
       type: 'relationship',
-      relationTo: 'categories'
+      relationTo: 'categorias'
     }
   ],
 }
