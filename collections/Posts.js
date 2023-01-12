@@ -2,7 +2,7 @@ const Posts = {
   slug: 'entrevistas',
   admin: {
     defaultColumns: ['tiulo', 'autor','empresa', 'category', 'tags', 'status'],
-    useAsTitle: 'title',
+    useAsTitle: 'tiulo',
   },
   access: {
     read: () => true,

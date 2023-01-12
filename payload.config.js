@@ -3,6 +3,7 @@ import Categories from './collections/Categories';
 import Posts from './collections/Posts';
 import Tags from './collections/Tags';
 import Users from './collections/Users';
+import Herramientas from './collections/Herramientas';
 
 
 export default buildConfig({
@@ -11,8 +12,9 @@ export default buildConfig({
     user: Users.slug,
   },
   collections: [
-    Categories,
     Posts,
+    Herramientas,
+    Categories,
     Tags,
     Users,
   ],
