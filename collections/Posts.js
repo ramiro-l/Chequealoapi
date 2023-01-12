@@ -1,15 +1,15 @@
 const Posts = {
   slug: 'entrevistas',
   admin: {
-    defaultColumns: ['tiulo', 'autor','empresa', 'category', 'tags', 'status'],
-    useAsTitle: 'tiulo',
+    defaultColumns: ['titulo', 'autor','empresa', 'categoria', 'tags', 'status'],
+    useAsTitle: 'titulo',
   },
   access: {
     read: () => true,
   },
   fields: [
     {
-      name: 'tiulo',
+      name: 'titulo',
       type: 'text',
     },
     {
@@ -25,7 +25,7 @@ const Posts = {
       type: 'date',
     },
     {
-      name: 'category',
+      name: 'categoria',
       type: 'relationship',
       relationTo: 'categories'
     },
@@ -36,7 +36,11 @@ const Posts = {
       hasMany: true,
     },
     {
-      name: 'content',
+      name: 'resumen',
+      type: 'text'
+    },
+    {
+      name: 'contenido',
       type: 'richText'
     },
     {
